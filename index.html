@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Potencias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>REPORTE DE POTENCIAS PENDIENTES DE ATENCIÓN</h1>
+    </header>
+
+    <!-- KPIS SUPERIORES -->
+
+    <section class="kpis-superiores">
+
+        <div class="card">KPI 1</div>
+        <div class="card">KPI 2</div>
+        <div class="card">KPI 3</div>
+        <div class="card">KPI 4</div>
+        <div class="card">KPI 5</div>
+
+    </section>
+
+    <!-- ZONA CENTRAL -->
+
+    <section class="contenido-principal">
+
+        <div class="grafico-barras">
+            <canvas id="graficaBarras"></canvas>
+        </div>
+
+        <div class="lado-derecho">
+
+            <div class="tabla-resumen">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Ciudad</th>
+                            <th>Incidentes</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Veracruz</td>
+                            <td>6</td>
+                        </tr>
+
+                        <tr>
+                            <td>Xalapa</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poza Rica</td>
+                            <td>2</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="grafico-pastel">
+
+                <canvas id="graficaPastel"></canvas>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- KPIS INFERIORES -->
+
+    <section class="kpis-inferiores">
+
+        <div class="card">KPI 6</div>
+        <div class="card">KPI 7</div>
+        <div class="card">KPI 8</div>
+        <div class="card">KPI 9</div>
+
+    </section>
+
+    <!-- TABLA DETALLE -->
+
+    <section class="tabla-detalle">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Ticket</th>
+                    <th>Antigüedad</th>
+                    <th>Categoría</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Veracruz</td>
+                    <td>INC001</td>
+                    <td>15 días</td>
+                    <td>CORE</td>
+                </tr>
+
+                <tr>
+                    <td>Xalapa</td>
+                    <td>INC002</td>
+                    <td>7 días</td>
+                    <td>ACCESO</td>
+                </tr>
+
+                <tr>
+                    <td>Poza Rica</td>
+                    <td>INC003</td>
+                    <td>30 días</td>
+                    <td>CORE</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
