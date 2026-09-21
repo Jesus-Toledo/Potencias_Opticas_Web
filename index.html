@@ -7,6 +7,7 @@
     <title>Reporte de Potencias</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 
 <body>
@@ -20,40 +21,32 @@
     <section class="kpis-superiores">
 
         <div class="card">
-
             <div class="icono">📋</div>
-
-            <div class="numero">14</div>
-
-            <div class="texto">
-
-                Total Incidentes
-
-            </div>
-
+            <div id="totalIncidentes" class="numero">0</div>
+            <div class="texto">Total Incidentes</div>
         </div>
 
         <div class="card">
             <div class="icono">📅</div>
-            <div class="numero">11</div>
+            <div id="ultimaSemana" class="numero">0</div>
             <div class="texto">Última Semana</div>
         </div>
 
         <div class="card">
             <div class="icono">⏳</div>
-            <div class="numero">8</div>
+            <div id="unoATresMeses" class="numero">0</div>
             <div class="texto">1 Semana a 3 Meses</div>
         </div>
 
         <div class="card">
             <div class="icono">⚠️</div>
-            <div class="numero">3</div>
+            <div id="mayorTresMeses" class="numero">0</div>
             <div class="texto">Mayor a 3 Meses</div>
         </div>
 
         <div class="card">
             <div class="icono">🚨</div>
-            <div class="numero">1</div>
+            <div id="mayorUnAno" class="numero">0</div>
             <div class="texto">Mayor a un Año</div>
         </div>
 
@@ -79,31 +72,16 @@
                     <thead>
                         <tr>
                             <th>Ciudad</th>
-                            <th>Total</th>
+                            <th>Tickets Totales</th>
+                            <th>MTTA</th>
+                            <th>Última Semana</th>
+                            <th>1 Semana - 3 Meses</th>
+                            <th>3 Meses - 1 Año</th>
+                            <th>> 1 Año</th>
                         </tr>
                     </thead>
 
-                    <tbody>
-
-                        <tr>
-                            <td>Veracruz</td>
-                            <td>6</td>
-                        </tr>
-
-                        <tr>
-                            <td>Xalapa</td>
-                            <td>4</td>
-                        </tr>
-
-                        <tr>
-                            <td>Poza Rica</td>
-                            <td>2</td>
-                        </tr>
-
-                        <tr>
-                            <td>Córdoba</td>
-                            <td>1</td>
-                        </tr>
+                    <tbody id="tablaResumenBody">
 
                     </tbody>
 
@@ -127,25 +105,25 @@
 
         <div class="card">
             <div class="icono">📡</div>
-            <div class="numero">9</div>
+            <div id="acceso" class="numero">0</div>
             <div class="texto">Potencias Ópticas Acceso</div>
         </div>
 
         <div class="card">
             <div class="icono">🌐</div>
-            <div class="numero">5</div>
+            <div id="core" class="numero">0</div>
             <div class="texto">Potencias Ópticas Core</div>
         </div>
 
         <div class="card">
             <div class="icono">🏢</div>
-            <div class="numero">2</div>
+            <div id="facilities" class="numero">0</div>
             <div class="texto">Facilities</div>
         </div>
 
         <div class="card">
             <div class="icono">🧹</div>
-            <div class="numero">1</div>
+            <div id="limpieza" class="numero">0</div>
             <div class="texto">Limpieza de Red</div>
         </div>
 
@@ -160,48 +138,19 @@
         <table>
 
             <thead>
+
                 <tr>
-                    <th>Ticket</th>
+                    <th>Incident ID</th>
+                    <th>Descripción Corta</th>
+                    <th>CreatedDateTime</th>
+                    <th>OwnedByTeam</th>
                     <th>Ciudad</th>
-                    <th>Antigüedad</th>
-                    <th>Categoría</th>
-                    <th>Estatus</th>
+                    <th>Días</th>
                 </tr>
+
             </thead>
 
-            <tbody>
-
-                <tr>
-                    <td>INC001</td>
-                    <td>Veracruz</td>
-                    <td>15 días</td>
-                    <td>CORE</td>
-                    <td>Abierto</td>
-                </tr>
-
-                <tr>
-                    <td>INC002</td>
-                    <td>Xalapa</td>
-                    <td>7 días</td>
-                    <td>ACCESO</td>
-                    <td>Abierto</td>
-                </tr>
-
-                <tr>
-                    <td>INC003</td>
-                    <td>Poza Rica</td>
-                    <td>32 días</td>
-                    <td>CORE</td>
-                    <td>Abierto</td>
-                </tr>
-
-                <tr>
-                    <td>INC004</td>
-                    <td>Córdoba</td>
-                    <td>120 días</td>
-                    <td>FACILITIES</td>
-                    <td>Abierto</td>
-                </tr>
+            <tbody id="tablaDetalleBody">
 
             </tbody>
 
