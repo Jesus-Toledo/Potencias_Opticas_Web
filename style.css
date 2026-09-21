@@ -27,6 +27,31 @@ header h1 {
 
 
 /* =====================================================
+   INFORMACION DEL DASHBOARD
+===================================================== */
+
+.info-dashboard {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background: white;
+
+    margin: 10px;
+
+    padding: 8px 15px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+
+    font-size: 12px;
+
+    color: #003f88;
+}
+
+/* =====================================================
    CONTENEDORES KPI
 ===================================================== */
 

@@ -8,6 +8,18 @@ fetch("datos.json")
     .then(response => response.json())
     .then(datos => {
 
+
+        // ==========================================
+        // DATOS GENERALES
+        // ==========================================
+
+        document.getElementById("region").textContent =
+            datos.region;
+
+        document.getElementById("ultimaActualizacion").textContent =
+            datos.ultimaActualizacion;
+
+
         // ==========================================
         // KPIS SUPERIORES
         // ==========================================
