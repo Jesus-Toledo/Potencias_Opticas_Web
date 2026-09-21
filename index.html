@@ -19,13 +19,46 @@
 
     <section class="kpis-superiores">
 
-        <div class="card">KPI 1</div>
-        <div class="card">KPI 2</div>
-        <div class="card">KPI 3</div>
-        <div class="card">KPI 4</div>
-        <div class="card">KPI 5</div>
+        <div class="card">
+
+            <div class="icono">📋</div>
+
+            <div class="numero">14</div>
+
+            <div class="texto">
+
+                Total Incidentes
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="icono">📅</div>
+            <div class="numero">11</div>
+            <div class="texto">Última Semana</div>
+        </div>
+
+        <div class="card">
+            <div class="icono">⏳</div>
+            <div class="numero">8</div>
+            <div class="texto">1 Semana a 3 Meses</div>
+        </div>
+
+        <div class="card">
+            <div class="icono">⚠️</div>
+            <div class="numero">3</div>
+            <div class="texto">Mayor a 3 Meses</div>
+        </div>
+
+        <div class="card">
+            <div class="icono">🚨</div>
+            <div class="numero">1</div>
+            <div class="texto">Mayor a un Año</div>
+        </div>
 
     </section>
+
 
     <!-- ZONA CENTRAL -->
 
@@ -39,12 +72,14 @@
 
             <div class="tabla-resumen">
 
+                <h3>Incidentes por Ciudad</h3>
+
                 <table>
 
                     <thead>
                         <tr>
                             <th>Ciudad</th>
-                            <th>Incidentes</th>
+                            <th>Total</th>
                         </tr>
                     </thead>
 
@@ -63,6 +98,11 @@
                         <tr>
                             <td>Poza Rica</td>
                             <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <td>Córdoba</td>
+                            <td>1</td>
                         </tr>
 
                     </tbody>
@@ -85,10 +125,29 @@
 
     <section class="kpis-inferiores">
 
-        <div class="card">KPI 6</div>
-        <div class="card">KPI 7</div>
-        <div class="card">KPI 8</div>
-        <div class="card">KPI 9</div>
+        <div class="card">
+            <div class="icono">📡</div>
+            <div class="numero">9</div>
+            <div class="texto">Potencias Ópticas Acceso</div>
+        </div>
+
+        <div class="card">
+            <div class="icono">🌐</div>
+            <div class="numero">5</div>
+            <div class="texto">Potencias Ópticas Core</div>
+        </div>
+
+        <div class="card">
+            <div class="icono">🏢</div>
+            <div class="numero">2</div>
+            <div class="texto">Facilities</div>
+        </div>
+
+        <div class="card">
+            <div class="icono">🧹</div>
+            <div class="numero">1</div>
+            <div class="texto">Limpieza de Red</div>
+        </div>
 
     </section>
 
@@ -96,40 +155,52 @@
 
     <section class="tabla-detalle">
 
+        <h3>Detalle de Incidentes</h3>
+
         <table>
 
             <thead>
-
                 <tr>
-                    <th>Ciudad</th>
                     <th>Ticket</th>
+                    <th>Ciudad</th>
                     <th>Antigüedad</th>
                     <th>Categoría</th>
+                    <th>Estatus</th>
                 </tr>
-
             </thead>
 
             <tbody>
 
                 <tr>
-                    <td>Veracruz</td>
                     <td>INC001</td>
+                    <td>Veracruz</td>
                     <td>15 días</td>
                     <td>CORE</td>
+                    <td>Abierto</td>
                 </tr>
 
                 <tr>
-                    <td>Xalapa</td>
                     <td>INC002</td>
+                    <td>Xalapa</td>
                     <td>7 días</td>
                     <td>ACCESO</td>
+                    <td>Abierto</td>
                 </tr>
 
                 <tr>
-                    <td>Poza Rica</td>
                     <td>INC003</td>
-                    <td>30 días</td>
+                    <td>Poza Rica</td>
+                    <td>32 días</td>
                     <td>CORE</td>
+                    <td>Abierto</td>
+                </tr>
+
+                <tr>
+                    <td>INC004</td>
+                    <td>Córdoba</td>
+                    <td>120 días</td>
+                    <td>FACILITIES</td>
+                    <td>Abierto</td>
                 </tr>
 
             </tbody>
