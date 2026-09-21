@@ -1,0 +1,106 @@
+{
+    "region": "Occidente",
+    "ultimaActualizacion": "21/09/2026 09:15",
+    "kpisSuperiores": {
+        "totalIncidentes": 87,
+        "ultimaSemana": 11,
+        "unoATresMeses": 8,
+        "mayorTresMeses": 3,
+        "mayorUnAno": 1
+    },
+    "kpisInferiores": {
+        "acceso": 9,
+        "core": 5,
+        "facilities": 2,
+        "limpieza": 1
+    },
+    "graficaCiudades": {
+        "labels": [
+            "Veracruz",
+            "Xalapa",
+            "Cosamaloapan",
+            "Perote",
+            "Poza Rica"
+        ],
+        "valores": [
+            6,
+            5,
+            2,
+            1,
+            1
+        ]
+    },
+    "graficaCategorias": {
+        "labels": [
+            "CORE",
+            "ACCESO"
+        ],
+        "valores": [
+            20,
+            12
+        ]
+    },
+    "tablaResumen": [
+        {
+            "ciudad": "Xalapa",
+            "ticketsTotales": 4,
+            "mtta": 48,
+            "ultimaSemana": 4,
+            "unoATresMeses": 0,
+            "tresMesesAUnAno": 0,
+            "mayorUnAno": 0
+        },
+        {
+            "ciudad": "Veracruz",
+            "ticketsTotales": 6,
+            "mtta": 179,
+            "ultimaSemana": 4,
+            "unoATresMeses": 0,
+            "tresMesesAUnAno": 2,
+            "mayorUnAno": 0
+        },
+        {
+            "ciudad": "Poza Rica",
+            "ticketsTotales": 1,
+            "mtta": 90,
+            "ultimaSemana": 1,
+            "unoATresMeses": 0,
+            "tresMesesAUnAno": 0,
+            "mayorUnAno": 0
+        }
+    ],
+    "tablaDetalle": [
+        {
+            "incidentId": "1243543",
+            "descripcionCorta": "ALARMA DE POTENCIA OPTICA",
+            "createdDateTime": "24/08/2026",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Villagran",
+            "dias": 28
+        },
+        {
+            "incidentId": "125834254",
+            "descripcionCorta": "ALARMA DE POTENCIA OPTICA",
+            "createdDateTime": "24/08/2026",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Villagran",
+            "dias": 28
+        },
+        {
+            "incidentId": "125834254",
+            "descripcionCorta": "ALARMA DE POTENCIA OPTICA",
+            "createdDateTime": "24/08/2026",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Villagran",
+            "dias": 28
+        },
+        {
+            "incidentId": "1243543",
+            "descripcionCorta": "ALARMA DE POTENCIA OPTICA",
+            "createdDateTime": "24/08/2026",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Villagran",
+            "dias": 28
+        }
+    ]
+}

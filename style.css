@@ -292,3 +292,55 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background: #e8f0ff;
 }
+
+/* =====================================================
+   INTERACCIONES Y FILTROS
+===================================================== */
+
+.card-filtrable {
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card-filtrable:hover {
+    transform: translateY(-3px);
+    border: 2px solid #ff6b00;
+    box-shadow: 0 3px 8px rgba(0, 63, 136, 0.2);
+}
+
+.card-filtrable.activa {
+    border: 2px solid #ff6b00;
+    background: #fff7f0;
+}
+
+.boton-limpiar {
+    margin: 0 10px 10px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #003f88;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-limpiar:hover {
+    background: #0056b3;
+}
+
+.boton-limpiar[hidden] {
+    display: none;
+}
+
+.filaResumen:hover {
+
+    background: #e7f1ff;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}

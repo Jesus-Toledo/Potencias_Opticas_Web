@@ -30,35 +30,48 @@
         </div>
 
     </section>
+
+    <button id="limpiarFiltros" class="boton-limpiar" type="button" hidden>
+        ✕ Limpiar filtros
+    </button>
     <!-- KPIS SUPERIORES -->
+
+    <!-- =====================================================
+     KPIS SUPERIORES FILTRABLES
+===================================================== -->
 
     <section class="kpis-superiores">
 
-        <div class="card">
+        <!-- Total de incidentes: restaura la vista completa -->
+        <div class="card card-filtrable" id="filtroTotalIncidentes">
             <div class="icono">📋</div>
             <div id="totalIncidentes" class="numero">0</div>
             <div class="texto">Total Incidentes</div>
         </div>
 
-        <div class="card">
+        <!-- Incidentes de 0 a 7 días -->
+        <div class="card card-filtrable" id="filtroUltimaSemana">
             <div class="icono">📅</div>
             <div id="ultimaSemana" class="numero">0</div>
             <div class="texto">Última Semana</div>
         </div>
 
-        <div class="card">
+        <!-- Incidentes de más de 7 y hasta 90 días -->
+        <div class="card card-filtrable" id="filtroUnoATresMeses">
             <div class="icono">⏳</div>
             <div id="unoATresMeses" class="numero">0</div>
             <div class="texto">1 Semana a 3 Meses</div>
         </div>
 
-        <div class="card">
+        <!-- Incidentes de más de 90 y hasta 365 días -->
+        <div class="card card-filtrable" id="filtroMayorTresMeses">
             <div class="icono">⚠️</div>
             <div id="mayorTresMeses" class="numero">0</div>
             <div class="texto">Mayor a 3 Meses</div>
         </div>
 
-        <div class="card">
+        <!-- Incidentes de más de 365 días -->
+        <div class="card card-filtrable" id="filtroMayorUnAno">
             <div class="icono">🚨</div>
             <div id="mayorUnAno" class="numero">0</div>
             <div class="texto">Mayor a un Año</div>
@@ -113,29 +126,31 @@
 
     </section>
 
-    <!-- KPIS INFERIORES -->
+    <!-- =====================================================
+     KPIS INFERIORES FILTRABLES POR CAPA
+===================================================== -->
 
     <section class="kpis-inferiores">
 
-        <div class="card">
+        <div class="card card-filtrable" id="filtroAcceso">
             <div class="icono">📡</div>
             <div id="acceso" class="numero">0</div>
             <div class="texto">Potencias Ópticas Acceso</div>
         </div>
 
-        <div class="card">
+        <div class="card card-filtrable" id="filtroCore">
             <div class="icono">🌐</div>
             <div id="core" class="numero">0</div>
             <div class="texto">Potencias Ópticas Core</div>
         </div>
 
-        <div class="card">
+        <div class="card card-filtrable" id="filtroFacilities">
             <div class="icono">🏢</div>
             <div id="facilities" class="numero">0</div>
             <div class="texto">Facilities</div>
         </div>
 
-        <div class="card">
+        <div class="card card-filtrable" id="filtroLimpieza">
             <div class="icono">🧹</div>
             <div id="limpieza" class="numero">0</div>
             <div class="texto">Limpieza de Red</div>

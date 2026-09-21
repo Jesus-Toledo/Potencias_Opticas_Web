@@ -1,0 +1,137 @@
+{
+    "region": "Occidente",
+    "ultimaActualizacion": "21/09/2026 09:15",
+    "kpisSuperiores": {
+        "totalIncidentes": 14,
+        "ultimaSemana": 11,
+        "unoATresMeses": 8,
+        "mayorTresMeses": 3,
+        "mayorUnAno": 1
+    },
+    "kpisInferiores": {
+        "acceso": 9,
+        "core": 5,
+        "facilities": 2,
+        "limpieza": 1
+    },
+    "graficaCiudades": {
+        "labels": [
+            "Veracruz",
+            "Xalapa",
+            "Cosamaloapan",
+            "Perote",
+            "Poza Rica"
+        ],
+        "valores": [
+            6,
+            5,
+            2,
+            1,
+            1
+        ]
+    },
+    "graficaCategorias": {
+        "labels": [
+            "CORE",
+            "ACCESO"
+        ],
+        "valores": [
+            20,
+            12
+        ]
+    },
+    "tablaResumen": [
+        {
+            "ciudad": "Xalapa",
+            "ticketsTotales": 4,
+            "mtta": 48,
+            "ultimaSemana": 4,
+            "unoATresMeses": 0,
+            "tresMesesAUnAno": 0,
+            "mayorUnAno": 0
+        },
+        {
+            "ciudad": "Veracruz",
+            "ticketsTotales": 6,
+            "mtta": 179,
+            "ultimaSemana": 4,
+            "unoATresMeses": 0,
+            "tresMesesAUnAno": 2,
+            "mayorUnAno": 0
+        },
+        {
+            "ciudad": "Poza Rica",
+            "ticketsTotales": 1,
+            "mtta": 90,
+            "ultimaSemana": 1,
+            "unoATresMeses": 0,
+            "tresMesesAUnAno": 0,
+            "mayorUnAno": 0
+        }
+    ],
+    "tablaDetalle": [
+        {
+            "incidentId": "INC-1001",
+            "descripcionCorta": "ALARMA DE POTENCIA ÓPTICA EN ENLACE",
+            "createdDateTime": "18/09/2026 08:30",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Veracruz",
+            "dias": 3,
+            "capa": "ACCESO"
+        },
+        {
+            "incidentId": "INC-1002",
+            "descripcionCorta": "DEGRADACIÓN DE POTENCIA ÓPTICA",
+            "createdDateTime": "16/09/2026 11:15",
+            "ownedByTeam": "CTC",
+            "ciudad": "Xalapa",
+            "dias": 5,
+            "capa": "CORE"
+        },
+        {
+            "incidentId": "INC-1003",
+            "descripcionCorta": "PÉRDIDA DE SEÑAL EN ENLACE",
+            "createdDateTime": "01/09/2026 09:20",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Veracruz",
+            "dias": 20,
+            "capa": "ACCESO"
+        },
+        {
+            "incidentId": "INC-1004",
+            "descripcionCorta": "POTENCIA FUERA DE UMBRAL",
+            "createdDateTime": "15/07/2026 14:10",
+            "ownedByTeam": "CTC",
+            "ciudad": "Cosamaloapan",
+            "dias": 68,
+            "capa": "CORE"
+        },
+        {
+            "incidentId": "INC-1005",
+            "descripcionCorta": "REVISIÓN DE ENLACE POR BAJA POTENCIA",
+            "createdDateTime": "10/03/2026 10:45",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Poza Rica",
+            "dias": 195,
+            "capa": "ACCESO"
+        },
+        {
+            "incidentId": "INC-1006",
+            "descripcionCorta": "ALARMA RECURRENTE DE POTENCIA",
+            "createdDateTime": "20/01/2026 07:50",
+            "ownedByTeam": "CTC",
+            "ciudad": "Perote",
+            "dias": 244,
+            "capa": "CORE"
+        },
+        {
+            "incidentId": "INC-1007",
+            "descripcionCorta": "INCIDENTE ANTIGUO DE POTENCIA ÓPTICA",
+            "createdDateTime": "10/08/2025 12:30",
+            "ownedByTeam": "Mantenimiento",
+            "ciudad": "Veracruz",
+            "dias": 407,
+            "capa": "CORE"
+        }
+    ]
+}
